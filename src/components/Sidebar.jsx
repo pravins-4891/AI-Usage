@@ -2,16 +2,25 @@ import styles from './Sidebar.module.css';
 
 const navItems = [
   { section: 'Overview', items: [
-    { id: 'dashboard', icon: '⊞',  label: 'Dashboard' },
-    { id: 'usage',     icon: '📊', label: 'Token Usage',  badge: 'Live', badgeType: 'accent' },
+    { id: 'dashboard',   icon: '⊞',  label: 'Analytics Dashboard' },
   ]},
-  { section: 'Models', items: [
-    { id: 'catalog',   icon: '🧠', label: 'Model Catalog' },
-    { id: 'agents',    icon: '🤖', label: 'Agents & Skills', badge: '12' },
+  { section: 'Assets', items: [
+    { id: 'assets',      icon: '🗂️', label: 'AI Asset Registry',  badge: '2', badgeType: 'warn' },
+    { id: 'catalog',     icon: '🧠', label: 'Model Catalog' },
+    { id: 'metadata',    icon: '🔷', label: 'Metadata Repository' },
+  ]},
+  { section: 'Operations', items: [
+    { id: 'usage',       icon: '📊', label: 'Usage Monitoring',    badge: 'Live', badgeType: 'accent' },
+    { id: 'costs',       icon: '💰', label: 'Cost Tracking',       badge: '!', badgeType: 'warn' },
+    { id: 'experiments', icon: '🔬', label: 'Experiment Tracking' },
+  ]},
+  { section: 'Prompts & Agents', items: [
+    { id: 'prompts',     icon: '📝', label: 'Prompt Management',  badge: '5', badgeType: 'warn' },
+    { id: 'agents',      icon: '🤖', label: 'Agents & Skills',    badge: '12' },
   ]},
   { section: 'Governance', items: [
-    { id: 'guardrails', icon: '🛡️', label: 'Guardrails', badge: '2', badgeType: 'warn' },
-    { id: 'reporting',  icon: '📋', label: 'Reports' },
+    { id: 'guardrails',  icon: '🛡️', label: 'Audit & Governance', badge: '2', badgeType: 'warn' },
+    { id: 'reporting',   icon: '📋', label: 'Reports' },
   ]},
 ];
 
