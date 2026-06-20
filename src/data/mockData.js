@@ -38,6 +38,32 @@ export const sparkData = {
   greenC: [80, 85, 78, 90, 88, 95, 100],
 };
 
+export const tokenTrend = [
+  { day: 'Jun 1',  claude: 180, gpt: 120, gemini: 80  },
+  { day: 'Jun 4',  claude: 210, gpt: 145, gemini: 95  },
+  { day: 'Jun 7',  claude: 195, gpt: 130, gemini: 105 },
+  { day: 'Jun 10', claude: 260, gpt: 160, gemini: 90  },
+  { day: 'Jun 13', claude: 240, gpt: 175, gemini: 120 },
+  { day: 'Jun 16', claude: 310, gpt: 190, gemini: 100 },
+  { day: 'Jun 19', claude: 290, gpt: 210, gemini: 140 },
+  { day: 'Jun 20', claude: 330, gpt: 225, gemini: 130 },
+];
+
+export const modelShare = [
+  { name: 'Claude Sonnet', value: 39, color: '#7c8cf8' },
+  { name: 'GPT-4o',        value: 26, color: '#4ade80' },
+  { name: 'Gemini Pro',    value: 17, color: '#f59e0b' },
+  { name: 'Llama 3.1',     value: 11, color: '#60a5fa' },
+  { name: 'Mistral',       value:  7, color: '#a78bfa' },
+];
+
+export const spendTrend = [
+  { week: 'W1', budget: 856, actual: 720  },
+  { week: 'W2', budget: 856, actual: 890  },
+  { week: 'W3', budget: 856, actual: 980  },
+  { week: 'W4', budget: 856, actual: 1257 },
+];
+
 export const userTokens = [
   { user: 'Priya Mehta',   team: 'Data Science', model: 'Claude Sonnet', input: '420,000', output: '180,000', total: '600K', quota: '500K', pct: 120, status: 'over' },
   { user: 'James Liu',     team: 'Engineering',  model: 'GPT-4o',        input: '280,000', output: '120,000', total: '400K', quota: '500K', pct: 80,  status: 'near' },
