@@ -7,9 +7,26 @@ import ModelCatalog from './components/views/ModelCatalog.jsx';
 import AgentsSkills from './components/views/AgentsSkills.jsx';
 import Guardrails from './components/views/Guardrails.jsx';
 import Reporting from './components/views/Reporting.jsx';
+import AssetRegistry from './components/views/AssetRegistry.jsx';
+import PromptManagement from './components/views/PromptManagement.jsx';
+import CostTracking from './components/views/CostTracking.jsx';
+import ExperimentTracking from './components/views/ExperimentTracking.jsx';
+import MetadataRepository from './components/views/MetadataRepository.jsx';
 import styles from './App.module.css';
 
-const views = { dashboard: Dashboard, usage: TokenUsage, catalog: ModelCatalog, agents: AgentsSkills, guardrails: Guardrails, reporting: Reporting };
+const views = {
+  dashboard:   Dashboard,
+  usage:       TokenUsage,
+  catalog:     ModelCatalog,
+  agents:      AgentsSkills,
+  guardrails:  Guardrails,
+  reporting:   Reporting,
+  assets:      AssetRegistry,
+  prompts:     PromptManagement,
+  costs:       CostTracking,
+  experiments: ExperimentTracking,
+  metadata:    MetadataRepository,
+};
 
 export default function App() {
   const [view, setView] = useState('dashboard');

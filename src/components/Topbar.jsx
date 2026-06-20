@@ -1,12 +1,17 @@
 import styles from './Topbar.module.css';
 
 const titles = {
-  dashboard:  'Dashboard',
-  usage:      'Token Usage',
-  catalog:    'Model Catalog',
-  agents:     'Agents & Skills',
-  guardrails: 'Guardrails',
-  reporting:  'Reports',
+  dashboard:   'Analytics Dashboard',
+  assets:      'AI Asset Registry',
+  catalog:     'Model Catalog',
+  metadata:    'Metadata Repository',
+  usage:       'Usage Monitoring',
+  costs:       'Cost Tracking',
+  experiments: 'Experiment Tracking',
+  prompts:     'Prompt Management',
+  agents:      'Agents & Skills',
+  guardrails:  'Audit & Governance',
+  reporting:   'Reports',
 };
 
 export default function Topbar({ view, onAddModel }) {

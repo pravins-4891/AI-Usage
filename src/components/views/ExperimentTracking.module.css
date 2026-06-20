@@ -1,0 +1,38 @@
+.page { padding: 20px; overflow-y: auto; flex: 1; }
+.kpiRow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+.mainGrid { display: grid; grid-template-columns: 3fr 2fr; gap: 14px; }
+.rightCol { display: flex; flex-direction: column; gap: 14px; }
+
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.cardHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.cardTitle { font-size: 13px; font-weight: 600; }
+
+.addBtn { padding: 6px 12px; border-radius: 6px; border: none; background: var(--accent); color: #fff; font-size: 11px; font-weight: 500; cursor: pointer; }
+.addBtn:hover { background: #6a7de8; }
+
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.table thead th { text-align: left; padding: 6px 10px; color: var(--text-dim); font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.table tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border-light); color: var(--text-primary); vertical-align: middle; }
+.table tbody tr:hover td { background: var(--bg-inset); }
+.selectedRow td { background: var(--accent-bg) !important; }
+
+.idCell { color: var(--text-muted); font-size: 10px; font-family: monospace; }
+.typeBadge { padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 500; border: 1px solid; white-space: nowrap; }
+.metricCell { color: var(--text-secondary); font-size: 10px; }
+
+.expName { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.detailGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.paramBlock { background: var(--bg-inset); border-radius: 6px; padding: 10px; }
+.paramKey { font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.paramVal { font-size: 12px; font-weight: 600; color: var(--text-primary); }
+
+.expActions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btnOutline { padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); font-size: 11px; cursor: pointer; }
+.btnOutline:hover { border-color: var(--accent); color: var(--accent); }
+.btnPrimary { padding: 5px 12px; border-radius: 6px; border: none; background: var(--accent); color: #fff; font-size: 11px; cursor: pointer; margin-left: auto; }
+
+.typeRow { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.typeLabel { width: 100px; font-size: 11px; color: var(--text-secondary); flex-shrink: 0; }
+.typeTrack { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.typeCount { width: 16px; font-size: 12px; font-weight: 700; text-align: right; }

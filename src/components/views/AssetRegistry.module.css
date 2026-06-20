@@ -1,0 +1,46 @@
+.page { padding: 20px; overflow-y: auto; flex: 1; }
+
+.kpiRow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+
+.cardHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
+.cardTitle { font-size: 13px; font-weight: 600; }
+
+.controls { display: flex; align-items: center; gap: 10px; }
+
+.filterTabs { display: flex; gap: 4px; }
+.tab { background: transparent; border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); font-size: 11px; padding: 4px 10px; cursor: pointer; transition: all 0.15s; }
+.tab:hover { background: var(--bg-hover); color: var(--text-primary); }
+.tabActive { background: var(--accent-bg); color: var(--accent); border-color: var(--accent); }
+
+.addBtn { padding: 6px 12px; border-radius: 6px; border: none; background: var(--accent); color: #fff; font-size: 11px; font-weight: 500; cursor: pointer; }
+.addBtn:hover { background: #6a7de8; }
+
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.table thead th { text-align: left; padding: 6px 10px; color: var(--text-dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; font-size: 9px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.table tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border-light); color: var(--text-primary); vertical-align: middle; }
+.table tbody tr:hover td { background: var(--bg-inset); }
+
+.idCell { color: var(--text-muted); font-size: 10px; font-family: monospace; }
+.assetName { display: flex; align-items: center; gap: 6px; }
+.version { background: var(--bg-inset); padding: 2px 6px; border-radius: 4px; font-size: 10px; color: var(--text-secondary); }
+.riskBadge { font-size: 11px; font-weight: 500; text-transform: capitalize; }
+
+.summaryGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.typeRow { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.typeIcon { font-size: 14px; width: 20px; }
+.typeLabel { width: 80px; font-size: 11px; color: var(--text-secondary); }
+.typeBarTrack { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.typeBarFill { height: 100%; border-radius: 4px; transition: width 0.4s; }
+.typeCount { width: 20px; font-size: 12px; font-weight: 700; text-align: right; }
+
+.riskRow { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 6px; margin-bottom: 8px; }
+.riskLabel { font-size: 12px; font-weight: 500; }
+.riskCount { font-size: 11px; font-weight: 600; }
+
+.reviewAlert { background: var(--amber-bg); border-left: 3px solid var(--amber); border-radius: 6px; padding: 10px; margin-top: 8px; }
+.alertTitle { font-size: 11px; font-weight: 600; color: var(--amber); }
+.alertBody { font-size: 10px; color: var(--text-secondary); margin-top: 3px; line-height: 1.5; }
