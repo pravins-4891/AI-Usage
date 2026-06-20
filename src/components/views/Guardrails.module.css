@@ -1,0 +1,86 @@
+.page { padding: 20px; overflow-y: auto; flex: 1; }
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.cardTitle { font-size: 13px; font-weight: 600; }
+
+.editBtn {
+  background: none;
+  border: none;
+  font-size: 11px;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+}
+
+.guardrailRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--bg-inset);
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.guardrailIcon { font-size: 14px; flex-shrink: 0; }
+.guardrailText { flex: 1; font-size: 11px; color: var(--text-primary); }
+
+.toggle {
+  width: 32px;
+  height: 18px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: background 0.2s;
+}
+
+.toggleOn  { background: var(--accent); justify-content: flex-end; }
+.toggleOff { background: #3a4255;       justify-content: flex-start; }
+
+.toggleKnob {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.triggerList { display: flex; flex-direction: column; gap: 8px; }
+
+.triggerBox {
+  border-left: 3px solid;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.triggerTitle { font-size: 11px; font-weight: 600; }
+.triggerBody  { font-size: 10px; color: var(--text-secondary); margin-top: 3px; }

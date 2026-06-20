@@ -1,0 +1,43 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.delta {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.up    { color: var(--green); }
+.down  { color: var(--red); }
+.neutral { color: var(--text-secondary); }
+
+.spark {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 28px;
+  margin-top: 4px;
+}
+
+.sparkBar {
+  width: 6px;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.3s;
+}
